@@ -46,7 +46,8 @@ The following table reports detection accuracy, parameter count, computational c
 | CBDeNet-Tiny | 68.51 | 1.02 | 3.0 | 2.2 |
 
 
-## Generalisation Ability  
+## Generalisation Ability
+Table 8 reports the cross-scenario evaluation results on the SCB3-S subset. CBDeNet-Tiny achieves an overall mAP50:95 of 52.09%, which is higher than the baseline model and YOLOv8n under the same evaluation setting. For the three evaluated behaviours, Hand-raising, Reading, and Writing, CBDeNet-Tiny obtains consistent improvements over YOLOv8n while using only 1.02 M parameters and 3.0 GFLOPs. These results suggest that the proposed lightweight design can retain a certain degree of cross-scenario adaptability while substantially reducing computational cost.
 ### Performance Comparison on the SCB3-S Subset
 
 | Model | Hand-raising mAP50:95 (%) | Reading mAP50:95 (%) | Writing mAP50:95 (%) | All mAP50:95 (%) | Params (M) | FLOPs (G) | FPS |
