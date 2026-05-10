@@ -1,7 +1,7 @@
 # Lightweight Visual Perception Architecture for Classroom Behaviour Detection via Hierarchical Feature Fusion and Adaptive Loss
 Intelligent education relies on automated visual assessment of student engagement to improve teaching quality. Existing detection methods struggle to balance accuracy and efficiency in dense, occluded classroom environments with limited computational resources. This work presents a lightweight perception framework for university classroom behaviour detection, termed CBDeNet, which integrates hybrid feature enhancement, hierarchical multi-scale fusion, and dynamic adaptive boundary loss. The model employs a dual-branch enhancement module to refine fine-grained feature representation and uses a streamlined feature pyramid to improve multi-scale information aggregation. A dynamic boundary loss is designed to alleviate sample imbalance, and layer-adaptive pruning further compresses the model. Experiments on the SCB-Dataset show that CBDeNet-Tiny achieves 68.51% mean average precision across intersection-over-union thresholds from 0.50 to 0.95 (mAP50:95), with only 1.02 million parameters, indicating potential for resource-constrained deployment.
 <p align="center">
-  <img src="images/1.png" width="70%">
+  <img src="images/3.png" width="70%">
 </p>  
 
 
@@ -59,6 +59,6 @@ The following table reports detection accuracy, parameter count, computational c
 Fig. 10 further analyses the attention distribution of CBDeNet using Grad-CAM visualisation. The baseline model shows relatively diffuse activation in distant or cluttered classroom regions, indicating that its responses may be affected by background structures such as desks, seats, or neighbouring students. By contrast, CBDeNet produces more concentrated activation around behaviour-related regions, including the upper body, head area, and local interaction regions of students. This more focused response is consistent with the design motivation of HFEBlock and HiFusionFPN, which aim to strengthen fine-grained representation and multi-scale semantic propagation. The Grad-CAM results provide qualitative support for CBDeNet’s extraction of behaviour-oriented visual cues in dense classroom scenes.  
 
 <p align="center">
-  <img src="images/2.png" width="80%">
+  <img src="images/10.png" width="80%">
 </p> 
 
